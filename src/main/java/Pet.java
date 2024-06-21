@@ -1,11 +1,11 @@
 public class Pet {
     private String name;
     private final String sex;
-    private final int age;
+    private int age;
     private final String species;
     private Person owner;
 
-    Pet(String name, String sex, int age, String species){
+    public Pet(String name, String sex, int age, String species){
         this.name=name;
         this.sex=sex;
         this.age=age;
@@ -38,5 +38,9 @@ public class Pet {
 
     public void setOwner(Person owner) {
         this.owner = owner;
+    }
+
+    public void increaseAgePetOneYear() {
+        this.age = age + 1;
     }
 }
